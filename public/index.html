@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- styles-css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="max-w-base flex  items-center justify-between mx-auto px-5 py-5 xxl:py-10 " >
+            <!-- logo -->
+            <div class="flex items-center gap-4 ">
+                <a href="#" class="shrink-0"><img src="./images/logo.svg" class="h-12"></a>
+                <a href="#" class="text-2xl lg:text-3xl font-bold text-primary uppercase">playloft</a>
+            </div>
+            <!-- link -->
+            <div class="hidden xxl:flex gap-10">
+                <a href="#" class="to-primary font-medium hover:underline underline-offset-4">Выбрать зал</a>
+                <a href="#" class="text-secondary font-medium hover:underline underline-offset-4">Event-услуги</a>
+                <a href="#" class="text-secondary font-medium hover:underline underline-offset-4">Акции</a>
+                <a href="#" class="text-secondary font-medium hover:underline underline-offset-4"> Идеи</a>
+                <a href="#" class="text-secondary font-medium hover:underline underline-offset-4">Избранное</a>
+                <a href="#" class="text-secondary font-medium hover:underline underline-offset-4">Контакты</a>
+                <a href="#" class="text-secondary font-medium hover:underline underline-offset-4"> Добавить площадку</a>
+            </div>
+                <button class="bg-pink hidden xxl:flex items-center gap-2 rounded-full py-4 px-5">
+                    <img src="./images/Vector.svg">
+                    <span class="text-white text-lg font-medium">Войти</span>
+                </button>
+            <div class="flex xxl:hidden items-center gap-1">
+                <button class="border-2 border-pink rounded-xl py-2 px-2">
+                    <img src="./images/vector-2.svg" alt="">
+                </button>
+                <button class="bg-pink rounded-xl py-3 px-3">
+                    <img src="./images/hamburger.svg" alt="">
+                </button>
+               </div>
+        </nav>
+    </header>
+    <main>
+        <!--  --> 
+        <section class="bg-heropattern h-screen bg-cover bg-no-repeat">
+            <div class="max-w-base mx-auto px-5 relative">
+               <div class="grid xxl:grid-cols-2">
+                <div>
+                    <h1 class="text-primary text-2xl lg:text-4xl font-bold uppercase lg:pt-20">
+                        сервис бронирования лофтов 
+                        и студий для мероприятий
+                    </h1>
+                    <p class="text-secondary text-xl pt-6">
+                        Через наш сайт вы найдёте площадку под любой тип мероприятия быстрее, чем номер в отеле или товар в интернет-магазине.
+                    </p>
+                    <div class="grid lg:grid-cols-2 gap-5 pt-10">
+                        <button class="bg-primary flex items-center justify-between rounded-full py-3 px-3 md:py-6 lg:px-7">
+                            <div class="flex items-center gap-3">
+                                <img src="./images/data.svg"><span class="text-secondary text-lg ">Дата и время</span>
+                            </div>
+                           <img src="./images/strell.svg" alt="">
+                        </button>
+                        <button class="bg-primary flex items-center justify-between rounded-full py-3 px-3 md:py-6 lg:px-7">
+                            <div class="flex items-center gap-3">
+                                <img src="./images/map.svg"><span class="text-secondary text-lg ">Дата и время</span>
+                            </div>
+                           <img src="./images/strell.svg" alt="">
+                        </button>
+                        <button class="bg-pink flex items-center justify-between rounded-full py-3 px-3 md:py-6 lg:px-7">
+                            <span class="text-2xl text-white font-semibold">Подобрать площадку</span><img src="./images/left.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <img src="./images/city.png" alt="" class="h-[710px]">
+                    </div>
+                    <div class="bg-yellow-50 flex items-center gap-3 rounded-full py-3 px-5 lg:py-6 lg:px-10 w-max absolute top-36 lg:top-16 left-0 ">
+                        <img src="./images/npes.svg" class="h-10" ><h4 class="text-primary text-2xl font-semibold leading-none">Более <span class="text-purple-700">
+                             4 840 </span><br> площадки</h4>
+                    </div>
+                    <div class="bg-yellow-50 flex items-center gap-3 rounded-full py-3 px-5 lg:py-6 lg:px-10 w-max absolute top-10 right-10">
+                        <img src="./images/old.svg" class="h-10" ><h4 class="text-primary text-2xl font-semibold leading-none">Более <span class="text-purple-700">
+                             4 840 </span><br> площадки</h4>
+                    </div>
+                    <div class="bg-yellow-50 flex items-center gap-3 rounded-full py-3 px-5 lg:py-6 lg:px-10 w-max absolute bottom-36 right-20">
+                        <img src="./images/house.svg" class="h-10" ><h4 class="text-primary text-2xl font-semibold leading-none">Более <span class="text-purple-700">
+                             4 840 </span><br> площадки</h4>
+                    </div>
+                </div>
+               </div>
+              <div class="grid xxl:grid-cols-4 gap-5 absolute -bottom-28">
+                <div  class="bg-white flex items-center gap-3 rounded-3xl px-10 py-10 ">
+                    <div>
+                        <h3 class="text-primary text-xl font-semibold">
+                            Гарантия вашего
+                            мероприятия
+                        </h3>
+                        <p class="text-secondary ">
+                            В случае накладок подберём новую площадку или вернём деньги
+                        </p>
+                    </div>
+                        <div>
+                            <img src="./images/img-1.svg">
+                        </div>
+                   </div>
+                   <div  class="bg-white hidden xxl:flex items-center gap-3 rounded-3xl px-10 py-10 ">
+                    <div>
+                        <h3 class="text-primary text-xl font-semibold">
+                            Гарантия вашего
+                            мероприятия
+                        </h3>
+                        <p class="text-secondary ">
+                            В случае накладок подберём новую площадку или вернём деньги
+                        </p>
+                    </div>
+                        <div>
+                            <img src="./images/image 7.svg">
+                        </div>
+                   </div>
+                   <div  class="bg-white hidden xxl:flex items-center gap-3 rounded-3xl  px-10 py-10 ">
+                    <div>
+                        <h3 class="text-primary text-xl font-semibold">
+                            Гарантия вашего
+                            мероприятия
+                        </h3>
+                        <p class="text-secondary ">
+                            В случае накладок подберём новую площадку или вернём деньги
+                        </p>
+                    </div>
+                        <div>
+                            <img src="./images/image 9.svg">
+                        </div>
+                   </div>
+                   <div  class="bg-white hidden xxl:flex items-center gap-3 rounded-3xl  px-10 py-10 ">
+                    <div>
+                        <h3 class="text-primary text-xl font-semibold">
+                            Гарантия вашего
+                            мероприятия
+                        </h3>
+                        <p class="text-secondary ">
+                            В случае накладок подберём новую площадку или вернём деньги
+                        </p>
+                    </div>
+                        <div>
+                            <img src="./images/image 10.svg">
+                        </div>
+                   </div>
+              </div>
+            </div>
+        </section>
+        <!-- Рекомендуем -->
+        <section class="max-w-base mx-auto px-5 pt-96 xxl:pt-32">
+            <h2 class="text-2xl lg:text-4xl text-primary font-bold ">Рекомендуем</h2>
+           <div class="grid lg:grid-cols-2 xxl:grid-cols-4 gap-5">
+            <div class="pt-7 ">
+                <div class="relative overflow-hidden">
+                    <img src="./images/reles.png" class="object-cover">
+                    <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                        <img src="./images/maps.svg" class="h-5">
+                        <p class="text-white">Центр</p>
+                    </div>
+                    <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                        <img src="./images/ylduz.svg" class="h-5">
+                        <p class="text-white">5.0</p>
+                    </div>
+                </div>
+                <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                    Стильный лофт и крыша на 
+                    дизайн-заводе Flacon №2316
+                </h3>
+                <p class="text-secondary pt-4 px-5">
+                    Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                </p>
+                <div class="flex items-center gap-1 pt-4 px-5">
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                </div>
+                <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+            </div>
+            <div class="pt-7 hidden lg:block">
+                <div class="relative overflow-hidden">
+                    <img src="./images/reles.png" class="object-cover">
+                    <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                        <img src="./images/maps.svg" class="h-5">
+                        <p class="text-white">Центр</p>
+                    </div>
+                    <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                        <img src="./images/ylduz.svg" class="h-5">
+                        <p class="text-white">5.0</p>
+                    </div>
+                </div>
+                <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                    Стильный лофт и крыша на 
+                    дизайн-заводе Flacon №2316
+                </h3>
+                <p class="text-secondary pt-4 px-5">
+                    Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                </p>
+                <div class="flex items-center gap-1 pt-4 px-5">
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                </div>
+                <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+            </div>
+            <div class="pt-7 hidden lg:block">
+                <div class="relative overflow-hidden">
+                    <img src="./images/reles.png" class="object-cover">
+                    <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                        <img src="./images/maps.svg" class="h-5">
+                        <p class="text-white">Центр</p>
+                    </div>
+                    <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                        <img src="./images/ylduz.svg" class="h-5">
+                        <p class="text-white">5.0</p>
+                    </div>
+                </div>
+                <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                    Стильный лофт и крыша на 
+                    дизайн-заводе Flacon №2316
+                </h3>
+                <p class="text-secondary pt-4 px-5">
+                    Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                </p>
+                <div class="flex items-center gap-1 pt-4 px-5">
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                </div>
+                <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+            </div>
+            <div class="pt-7 hidden lg:block">
+                <div class="relative overflow-hidden">
+                    <img src="./images/reles.png" class="object-cover">
+                    <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                        <img src="./images/maps.svg" class="h-5">
+                        <p class="text-white">Центр</p>
+                    </div>
+                    <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                        <img src="./images/ylduz.svg" class="h-5">
+                        <p class="text-white">5.0</p>
+                    </div>
+                </div>
+                <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                    Стильный лофт и крыша на 
+                    дизайн-заводе Flacon №2316
+                </h3>
+                <p class="text-secondary pt-4 px-5">
+                    Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                </p>
+                <div class="flex items-center gap-1 pt-4 px-5">
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                    <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                        <img src="./images/food.svg" alt="" class="mx-auto">
+                        <p class="text-primary text-sm font-semibold">1000 м²</p>
+                    </div>
+                </div>
+                <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+            </div>
+           </div>
+           <div class="relative mt-5 overflow-hidden">
+            <img src="./images/chart.png" alt="" class="object-cover h-48 w-full">
+            <button class="w-max bg-pink flex items-center gap-5 rounded-full absolute bottom-10 right-9 lg:right-1/3 mx-auto py-3 px-3 md:py-6 lg:px-7 ">
+                <span class="text-2xl text-white font-semibold">Площадки на карте</span><img src="./images/left.svg" alt="">
+            </button>
+           </div>
+        </section>
+        <!--  -->
+        <section class="max-w-base mx-auto px-5">
+            <h2 class="text-2xl lg:text-4xl text-primary font-bold  py-10  ">Все типы площадокs</h2>
+            <h2 class="text-2xl lg:text-4xl text-primary font-bold py-10">Площадки для детских праздников</h2>
+            <div class="grid lg:grid-cols-2 xxl:grid-cols-4 gap-5">
+                <div class="pt-7 ">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/reles.png" class="object-cover">
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                            <img src="./images/maps.svg" class="h-5">
+                            <p class="text-white">Центр</p>
+                        </div>
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                            <img src="./images/ylduz.svg" class="h-5">
+                            <p class="text-white">5.0</p>
+                        </div>
+                    </div>
+                    <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                        Стильный лофт и крыша на 
+                        дизайн-заводе Flacon №2316
+                    </h3>
+                    <p class="text-secondary pt-4 px-5">
+                        Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                    </p>
+                    <div class="flex items-center gap-1 pt-4 px-5">
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+                </div>
+                <div class="pt-7 hidden lg:block">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/reles.png" class="object-cover">
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                            <img src="./images/maps.svg" class="h-5">
+                            <p class="text-white">Центр</p>
+                        </div>
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                            <img src="./images/ylduz.svg" class="h-5">
+                            <p class="text-white">5.0</p>
+                        </div>
+                    </div>
+                    <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                        Стильный лофт и крыша на 
+                        дизайн-заводе Flacon №2316
+                    </h3>
+                    <p class="text-secondary pt-4 px-5">
+                        Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                    </p>
+                    <div class="flex items-center gap-1 pt-4 px-5">
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+                </div>
+                <div class="pt-7 hidden lg:block">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/reles.png" class="object-cover">
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                            <img src="./images/maps.svg" class="h-5">
+                            <p class="text-white">Центр</p>
+                        </div>
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                            <img src="./images/ylduz.svg" class="h-5">
+                            <p class="text-white">5.0</p>
+                        </div>
+                    </div>
+                    <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                        Стильный лофт и крыша на 
+                        дизайн-заводе Flacon №2316
+                    </h3>
+                    <p class="text-secondary pt-4 px-5">
+                        Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                    </p>
+                    <div class="flex items-center gap-1 pt-4 px-5">
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+                </div>
+                <div class="pt-7 hidden lg:block">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/reles.png" class="object-cover">
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                            <img src="./images/maps.svg" class="h-5">
+                            <p class="text-white">Центр</p>
+                        </div>
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                            <img src="./images/ylduz.svg" class="h-5">
+                            <p class="text-white">5.0</p>
+                        </div>
+                    </div>
+                    <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                        Стильный лофт и крыша на 
+                        дизайн-заводе Flacon №2316
+                    </h3>
+                    <p class="text-secondary pt-4 px-5">
+                        Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                    </p>
+                    <div class="flex items-center gap-1 pt-4 px-5">
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+                </div>
+            </div>
+            <div class="bg-push rounded-3xl mt-16">
+                <div class="grid xxl:grid-cols-2 gap-9 py-14 px-12">
+                   <div>
+                    <h2 class="text-2xl lg:text-4xl text-white font-bold uppercase ">Как узнать, свободна ли 
+                        площадка на нужную мне дату?
+                    </h2>
+                    <p class="text-lg text-white pt-6">
+                        Если вам нужна площадка для мероприятия, у нас большой выбор пространств под любые требования.
+                    </p>
+                   </div>
+                    <div class="grid lg:grid-cols-2 gap-5">
+                        <button class="bg-white flex items-center justify-between rounded-full py-3 px-3 md:py-6 lg:px-7">
+                            <div class="flex items-center gap-3">
+                                <img src="./images/data.svg"><span class="text-primary text-lg ">Дата и время</span>
+                            </div>
+                           <img src="./images/strell.svg" alt="">
+                        </button>
+                        <button class="bg-white flex items-center justify-between rounded-full py-3 px-3 md:py-6 lg:px-7">
+                            <div class="flex items-center gap-3">
+                                <img src="./images/map.svg"><span class="text-primary text-lg ">Дата и время</span>
+                            </div>
+                           <img src="./images/strell.svg" alt="">
+                        </button>
+                        <button class="bg-white flex items-center justify-between rounded-full py-3 px-3 md:py-6 lg:px-7">
+                            <div class="flex items-center gap-3">
+                                <img src="./images/map.svg"><span class="text-primary text-lg ">Дата и время</span>
+                            </div>
+                           <img src="./images/strell.svg" alt="">
+                        </button>
+                        <button class="bg-pink flex flex-1 items-center justify-between rounded-full py-3 px-3 lg:py-6 lg:px-7">
+                            <span class="text-2xl text-white font-semibold">Подобрать площадку</span><img src="./images/left.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-2xl lg:text-4xl text-primary font-bold py-10">Фотостудии</h2>
+            <div class="grid lg:grid-cols-2 xxl:grid-cols-4 gap-5">
+                <div class="pt-7 ">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/reles.png" class="object-cover">
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                            <img src="./images/maps.svg" class="h-5">
+                            <p class="text-white">Центр</p>
+                        </div>
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                            <img src="./images/ylduz.svg" class="h-5">
+                            <p class="text-white">5.0</p>
+                        </div>
+                    </div>
+                    <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                        Стильный лофт и крыша на 
+                        дизайн-заводе Flacon №2316
+                    </h3>
+                    <p class="text-secondary pt-4 px-5">
+                        Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                    </p>
+                    <div class="flex items-center gap-1 pt-4 px-5">
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+                </div>
+                <div class="pt-7 hidden lg:block">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/reles.png" class="object-cover">
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                            <img src="./images/maps.svg" class="h-5">
+                            <p class="text-white">Центр</p>
+                        </div>
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                            <img src="./images/ylduz.svg" class="h-5">
+                            <p class="text-white">5.0</p>
+                        </div>
+                    </div>
+                    <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                        Стильный лофт и крыша на 
+                        дизайн-заводе Flacon №2316
+                    </h3>
+                    <p class="text-secondary pt-4 px-5">
+                        Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                    </p>
+                    <div class="flex items-center gap-1 pt-4 px-5">
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+                </div>
+                <div class="pt-7 hidden lg:block">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/reles.png" class="object-cover">
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                            <img src="./images/maps.svg" class="h-5">
+                            <p class="text-white">Центр</p>
+                        </div>
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                            <img src="./images/ylduz.svg" class="h-5">
+                            <p class="text-white">5.0</p>
+                        </div>
+                    </div>
+                    <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                        Стильный лофт и крыша на 
+                        дизайн-заводе Flacon №2316
+                    </h3>
+                    <p class="text-secondary pt-4 px-5">
+                        Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                    </p>
+                    <div class="flex items-center gap-1 pt-4 px-5">
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+                </div>
+                <div class="pt-7 hidden lg:block">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/reles.png" class="object-cover">
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-5 py-1 px-3">
+                            <img src="./images/maps.svg" class="h-5">
+                            <p class="text-white">Центр</p>
+                        </div>
+                        <div class="bg-slate-500 rounded-3xl flex items-center gap-1 absolute top-5 left-60 py-1 px-3">
+                            <img src="./images/ylduz.svg" class="h-5">
+                            <p class="text-white">5.0</p>
+                        </div>
+                    </div>
+                    <h3 class="text-primary text-lg font-semibold pt-5 px-5">
+                        Стильный лофт и крыша на 
+                        дизайн-заводе Flacon №2316
+                    </h3>
+                    <p class="text-secondary pt-4 px-5">
+                        Арт-пространство на дизайн-заводе - светлый лофт для проведения фотосъемок, видеосъемок, мероприятий
+                    </p>
+                    <div class="flex items-center gap-1 pt-4 px-5">
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                        <div class=" border border-[#F5F5F5] rounded-2xl w-max py-3 px-3">
+                            <img src="./images/food.svg" alt="" class="mx-auto">
+                            <p class="text-primary text-sm font-semibold">1000 м²</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-[#7C68CB] font-bold pt-4 px-5">от 2 500 до 4 000 ₽ / час</p>
+                </div>
+            </div>
+           <div class="grid xxl:grid-cols-2 gap-5 border border-[#E8E0E0] rounded-3xl mt-14 py-16 px-12 ">
+            <div>
+                <h2 class="text-2xl lg:text-4xl text-primary font-bold uppercase ">Подключайтесь</h2>
+                <p class="pt-7">
+                    Если вам нужна площадка для мероприятия, у нас большой выбор пространств под любые требования. <br><br>
+                    А арендодателям мы предлагаем удобную CRM-систему для управления бронированиями и аналитики.
+                </p>
+               <div class="grid xxl:grid-cols-2 gap-3 pt-9">
+                <button class="bg-pink flex flex-1 items-center gap-3 justify-between rounded-full py-3 px-3 lg:py-6 lg:px-7">
+                    <span class="text-2xl text-white font-semibold">Подобрать площадку</span><img src="./images/left.svg" alt="">
+                </button>
+                <button class="border-4 border-pink flex flex-1 items-center gap-3 justify-between rounded-full py-3 px-3 lg:py-6 lg:px-7">
+                    <span class="text-2xl text-primary font-semibold">Подобрать площадку</span><img src="./images/left.svg" alt="">
+                </button>
+               </div>
+            </div>
+            <div class="grid xxl:grid-cols-3 gap-5 ">
+                <div class="border border-[#E8E0E0] rounded-3xl py-11 px-16 " >
+                        <img src="./images/mobile.png" alt="">
+                    <p class="text-secondary text-lg text-center font-medium pt-8">
+                        Оставьте<br>
+                        заявку
+                    </p>
+                </div>
+                <div class="border border-[#E8E0E0] rounded-3xl py-11 px-16" >
+                    <img src="./images/mobile.png" alt="">
+                    <p class="text-secondary text-lg text-center font-medium pt-8">
+                        Оставьте<br>
+                        заявку
+                    </p>
+                </div>
+                <div class="border border-[#E8E0E0] rounded-3xl py-11 px-16" >
+                    <img src="./images/mobile.png" alt="">
+                    <p class="text-secondary text-lg text-center font-medium pt-8">
+                        Оставьте<br>
+                        заявку
+                    </p>
+                </div>
+            </div>
+           </div>
+        </section>
+    </main>
+     <!-- footer -->
+     <footer class="bg-bed">
+            <div class="max-w-base  mx-auto px-5 py-16">
+               <div class="grid lg:grid-cols-3 xxl:grid-cols-5 gap-20">
+                <div>
+                    <div class="flex items-center gap-4">
+                        <a href="#"><img src="./images/doira-logo.svg" alt=""></a>
+                        <a href="#" class="text-4xl text-white font-bold uppercase">playloft</a>
+                     </div>
+                     <p class="text-white  pt-8 lg:pt-12 ">Сервис бронирования лофтов и студий для мероприятий. Через наш сайт вы найдёте площадку под любой тип мероприятия быстрее, чем номер в отеле или товар в интернет-магазине.</p>
+                   </div>
+                    <div class="hidden xxl:block">
+                        <h3 class="text-lg text-white font-bold">МЕНЮ САЙТА</h3>
+                        <div class="text-white flex flex-col gap-5 pt-8">
+                            <a href="#">Главная страница</a>
+                            <a href="#">Маркетплейс</a>
+                            <a href="#">Москва</a>
+                            <a href="#">Санкт-Петербуг</a>
+                            <a href="#">Event-услугиРеклама </a>
+                            <a href="#">Журнал «Bash Life»</a>
+                        </div>
+                   </div>
+                   <div class="hidden xxl:block">
+                    <h3 class="text-lg text-white font-bold">МЕНЮ САЙТА</h3>
+                    <div class="text-white flex flex-col gap-5 pt-8">
+                        <a href="#">Главная страница</a>
+                        <a href="#">Маркетплейс</a>
+                        <a href="#">Москва</a>
+                        <a href="#">Санкт-Петербуг</a>
+                        <a href="#">Event-услугиРеклама</a>
+                        <a href="#">Журнал «Bash Life»</a>
+                    </div>
+               </div>
+               <div>
+                <h3 class="text-lg text-white font-bold">МЕНЮ САЙТА</h3>
+                <div class="text-white flex flex-col gap-5 pt-8">
+                    <a href="#">Главная страница</a>
+                    <a href="#">Маркетплейс</a>
+                    <a href="#">Москва</a>
+                    <a href="#">Санкт-Петербуг</a>
+                    <a href="#">Event-услугиРеклама </a>
+                    <a href="#">Журнал «Bash Life»</a>
+                </div>
+           </div>
+           <div>
+            <h3 class="text-lg text-white font-bold">МЕНЮ САЙТА</h3>
+            <p class="text-white pt-8">125040, Россия, Москва, 
+                Ленинградский проспект, 26к1<br><br>
+
+                
+                190121, Россия, Санкт-Петербург,
+                набережная реки Пряжки, 5</p>
+       </div>
+                   </div>
+               </div>
+            
+     </footer>
+</body>
+</html>
